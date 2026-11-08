@@ -47,13 +47,14 @@
             transform: translate(-50%, -50%);
             border-radius: 50%;
             z-index: 9999;
+            opacity: 0;
             transition: opacity 0.3s ease;
         }
         .cursor-dot { width: 8px; height: 8px; background-color: #00f2fe; }
         .cursor-bg {
             width: 36px; height: 36px;
             border: 1px solid rgba(0, 242, 254, 0.5);
-            transition: transform 0.15s ease-out, width 0.2s, height 0.2s;
+            transition: left 0.08s ease-out, top 0.08s ease-out, width 0.2s, height 0.2s, border-color 0.2s, opacity 0.3s ease;
         }
 
         /* Neo Brutalism Glow Effects */
@@ -76,11 +77,11 @@
             border-bottom: 1px solid rgba(255, 255, 255, 0.05);
         }
 
-/* Gradient Text */
+        /* Gradient Text */
         .text-gradient {
             background: linear-gradient(135deg, #00f2fe 0%, #4facfe 50%, #7928ca 100%);
             -webkit-background-clip: text;
-            background-clip: text; /* Tambahkan baris ini untuk menghilangkan peringatan */
+            background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
@@ -102,11 +103,12 @@
         <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
             <a href="#" class="font-display text-xl font-bold tracking-wider flex items-center gap-2">
                 <span class="w-3 h-3 bg-cyan-400 rounded-full animate-ping"></span>
-                <span class="text-white">Axora</span><span class="text-cyan-400">.dev</span>
+                <span class="text-white">Axora</span><span class="text-cyan-400">.digital</span>
             </a>
             
             <div class="hidden md:flex items-center gap-8 text-sm font-semibold tracking-wide">
                 <a href="#about" class="hover:text-cyan-400 transition-colors">Tentang Saya</a>
+                <a href="#education" class="hover:text-cyan-400 transition-colors">Pendidikan</a>
                 <a href="#skills" class="hover:text-cyan-400 transition-colors">Keahlian</a>
                 <a href="#projects" class="hover:text-cyan-400 transition-colors">Karya</a>
             </div>
@@ -124,8 +126,10 @@
         <!-- Mobile Dropdown -->
         <div id="mobile-menu" class="hidden md:hidden bg-brand-card border-b border-brand-border px-6 py-4 space-y-3">
             <a href="#about" class="block text-sm hover:text-cyan-400">Tentang Saya</a>
+            <a href="#education" class="block text-sm hover:text-cyan-400">Pendidikan</a>
             <a href="#skills" class="block text-sm hover:text-cyan-400">Keahlian</a>
             <a href="#projects" class="block text-sm hover:text-cyan-400">Karya</a>
+            <a href="#contact" class="block text-sm hover:text-cyan-400">Kontak</a>
         </div>
     </nav>
 
@@ -163,10 +167,10 @@
         <div class="grid md:grid-cols-12 gap-10 items-center">
             <div class="md:col-span-5">
                 <div class="neo-box p-4 bg-brand-card relative group">
-            <div class="w-full h-80 bg-slate-800 rounded flex items-center justify-center overflow-hidden relative">
-                <img src="Aceng.jpeg" alt="Aceng Wildan Laksana" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <div class="absolute inset-0 bg-gradient-to-t from-brand-card via-transparent to-transparent opacity-40"></div>
-            </div>
+                    <div class="w-full h-80 bg-slate-800 rounded flex items-center justify-center overflow-hidden relative">
+                        <img src="Aceng.jpeg" alt="Aceng Wildan Laksana" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-card via-transparent to-transparent opacity-40"></div>
+                    </div>
                     <div class="mt-4 p-2">
                         <h3 class="font-display font-bold text-lg text-white">Aceng Wildan Laksana</h3>
                         <p class="text-xs text-cyan-400">SMKN 1 Kawali — Rekayasa Perangkat Lunak</p>
@@ -205,6 +209,63 @@
                         <span class="block text-xs text-slate-500 font-display uppercase">Fokus Hardware</span>
                         <span class="text-sm font-semibold text-slate-200">Arduino & IoT Modules</span>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 px-6 max-w-5xl mx-auto border-t border-brand-border">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="text-xs font-bold uppercase tracking-widest text-cyan-400 font-display mb-2">// Riwayat Pendidikan</h2>
+            <h3 class="text-3xl font-bold font-display text-white">Jejak Akademis</h3>
+            <p class="text-slate-400 text-sm mt-2">Latar belakang pendidikan formal yang telah dan sedang saya tempuh.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+            <!-- SMKN 1 KAWALI -->
+            <div class="neo-box p-6 bg-brand-card flex flex-col justify-between relative overflow-hidden">
+                <div class="absolute -top-3 -right-3 w-16 h-16 bg-cyan-500/10 rounded-full blur-xl pointer-events-none"></div>
+                <div>
+                    <span class="inline-block px-3 py-1 bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-[11px] font-bold rounded-full mb-4">
+                        2024 - Sekarang
+                    </span>
+                    <h4 class="font-display font-bold text-lg text-white mb-1">SMKN 1 KAWALI</h4>
+                    <p class="text-xs text-cyan-300 font-medium mb-3">Rekayasa Perangkat Lunak (RPL)</p>
+                    <p class="text-xs text-slate-400 leading-relaxed">Fokus mempelajari pemrograman web, basis data.</p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-brand-border flex items-center gap-2 text-slate-500 text-xs">
+                    <i class="fa-solid fa-graduation-cap text-cyan-400"></i> Sekolah Menengah Kejuruan
+                </div>
+            </div>
+
+            <!-- SMPN 1 KAWALI -->
+            <div class="neo-box p-6 bg-brand-card flex flex-col justify-between">
+                <div>
+                    <span class="inline-block px-3 py-1 bg-slate-800 border border-brand-border text-slate-400 text-[11px] font-bold rounded-full mb-4">
+                        2021 - 2024
+                    </span>
+                    <h4 class="font-display font-bold text-lg text-white mb-1">SMPN 1 KAWALI</h4>
+                    <p class="text-xs text-slate-400 font-medium mb-3">Pendidikan Menengah Pertama</p>
+                    <p class="text-xs text-slate-400 leading-relaxed">Mengembangkan fondasi akademis awal serta mulai tertarik pada dunia teknologi informasi.</p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-brand-border flex items-center gap-2 text-slate-500 text-xs">
+                    <i class="fa-solid fa-school text-slate-400"></i> Sekolah Menengah Pertama
+                </div>
+            </div>
+
+            <!-- SDN Pancawati 02 -->
+            <div class="neo-box p-6 bg-brand-card flex flex-col justify-between">
+                <div>
+                    <span class="inline-block px-3 py-1 bg-slate-800 border border-brand-border text-slate-400 text-[11px] font-bold rounded-full mb-4">
+                        2015 - 2021
+                    </span>
+                    <h4 class="font-display font-bold text-lg text-white mb-1">SDN Pancawati 02</h4>
+                    <p class="text-xs text-slate-400 font-medium mb-3">Pendidikan Dasar</p>
+                    <p class="text-xs text-slate-400 leading-relaxed">Menyelesaikan pendidikan dasar dengan fokus pada literasi dan sains dasar.</p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-brand-border flex items-center gap-2 text-slate-500 text-xs">
+                    <i class="fa-solid fa-book-open text-slate-400"></i> Sekolah Dasar
                 </div>
             </div>
         </div>
@@ -281,51 +342,57 @@
 
         <!-- Project Cards Container -->
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="projects-grid">
-            <!-- Project Card 1: Web Laravel -->
-            <div class="project-item neo-box bg-brand-card overflow-hidden" data-category="web">
-                <div class="h-48 bg-slate-800 flex items-center justify-center border-b border-brand-border relative">
-                    <i class="fa-solid fa-laptop-code text-5xl text-cyan-400/50"></i>
-                    <span class="absolute top-3 right-3 px-2 py-1 bg-brand-dark/80 text-[10px] text-cyan-300 border border-cyan-500/30">LARAVEL + SQL</span>
-                </div>
-                <div class="p-6">
-                    <h4 class="font-display font-bold text-lg text-white mb-2">Company Profile </h4>
-                    <p class="text-slate-400 text-xs mb-4">Web Company Profile PT Solusi Koneksi informasi perusahaan berbasis Laravel dengan database MySQL.</p>
-                    <div class="flex items-center justify-between">
-                        <span class="text-[11px] text-slate-500">Web App</span>
-                        <button onclick="openModal('Company Profile', 'Web Company Profile PT Solusi Koneksi merupakan web informasi perusahaan berbasis Laravel dengan database MySQL.', 'PHP, Laravel, MySQL')" class="text-xs text-cyan-400 font-bold hover:underline">Detail <i class="fa-solid fa-arrow-right"></i></button>
+            <!-- Project Card 1: Web Laravel (Company Profile - Tugas Sekolah) -->
+            <div class="project-item neo-box bg-brand-card overflow-hidden flex flex-col justify-between" data-category="web">
+                <div>
+                    <div class="h-48 bg-slate-800 flex items-center justify-center border-b border-brand-border relative">
+                        <i class="fa-solid fa-laptop-code text-5xl text-cyan-400/50"></i>
+                        <span class="absolute top-3 right-3 px-2 py-1 bg-brand-dark/80 text-[10px] text-cyan-300 border border-cyan-500/30">LARAVEL + SQL</span>
                     </div>
+                    <div class="p-6">
+                        <h4 class="font-display font-bold text-lg text-white mb-2">Web Company Profile</h4>
+                        <p class="text-slate-400 text-xs mb-4 leading-relaxed">Proyek tugas sekolah berupa website company profile interaktif berbasis framework Laravel dengan manajemen basis data MySQL.</p>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 pt-2 flex items-center justify-between border-t border-brand-border/40">
+                    <span class="text-[11px] text-slate-500">Tugas Sekolah (Web)</span>
+                    <button onclick="openModal('Web Company Profile', 'Proyek tugas sekolah pembuatan website company profile berbasis framework Laravel dan database MySQL untuk mempublikasikan informasi lembaga secara informatif, dinamis, dan terstruktur.', 'PHP, Laravel, MySQL, Tailwind CSS')" class="text-xs text-cyan-400 font-bold hover:underline flex items-center gap-1">Detail <i class="fa-solid fa-arrow-right"></i></button>
                 </div>
             </div>
 
-            <!-- Project Card 2: IoT Arduino -->
-            <div class="project-item neo-box bg-brand-card overflow-hidden" data-category="iot">
-                <div class="h-48 bg-slate-800 flex items-center justify-center border-b border-brand-border relative">
-                    <i class="fa-solid fa-wifi text-5xl text-emerald-400/50"></i>
-                    <span class="absolute top-3 right-3 px-2 py-1 bg-brand-dark/80 text-[10px] text-emerald-300 border border-emerald-500/30">ARDUINO + IOT</span>
-                </div>
-                <div class="p-6">
-                    <h4 class="font-display font-bold text-lg text-white mb-2">Sistem Sensor Jarak</h4>
-                    <p class="text-slate-400 text-xs mb-4">Proyek Arduino menggunakan sensor ultrasonik yang menampilkan data ke layar lcd.</p>
-                    <div class="flex items-center justify-between">
-                        <span class="text-[11px] text-slate-500">IoT System</span>
-                        <button onclick="openModal('Sistem Sensor Jarak', 'Proyek Arduino menggunakan sensor ultrasonik yang menampilkan data jarak ke layar lcd dan membunyikan buzzer jika jarak terlalu dekat.', 'Arduino ide C++, sensor ultrasonik, buzzer, LCD Display')" class="text-xs text-cyan-400 font-bold hover:underline">Detail <i class="fa-solid fa-arrow-right"></i></button>
+            <!-- Project Card 2: IoT Arduino (Sensor Pendeteksi Api) -->
+            <div class="project-item neo-box bg-brand-card overflow-hidden flex flex-col justify-between" data-category="iot">
+                <div>
+                    <div class="h-48 bg-slate-800 flex items-center justify-center border-b border-brand-border relative">
+                        <i class="fa-solid fa-fire-flame-curved text-5xl text-orange-400/60"></i>
+                        <span class="absolute top-3 right-3 px-2 py-1 bg-brand-dark/80 text-[10px] text-orange-300 border border-orange-500/30">ARDUINO + IOT</span>
                     </div>
+                    <div class="p-6">
+                        <h4 class="font-display font-bold text-lg text-white mb-2">Sistem Sensor Pendeteksi Api</h4>
+                        <p class="text-slate-400 text-xs mb-4 leading-relaxed">Proyek IoT Arduino menggunakan Flame Sensor (sensor pendeteksi api) yang otomatis mengaktifkan buzzer alarm peringatan dini saat mendeteksi api.</p>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 pt-2 flex items-center justify-between border-t border-brand-border/40">
+                    <span class="text-[11px] text-slate-500">IoT System</span>
+                    <button onclick="openModal('Sistem Sensor Pendeteksi Api', 'Prototipe sistem keselamatan kebakaran berbasis Arduino dengan Flame Sensor untuk mendeteksi nyala api secara real-time. Ketika api terdeteksi, sistem langsung membunyikan buzzer alarm dan menyalakan lampu indikator sebagai peringatan bahaya.', 'Arduino C++, Flame Sensor, Buzzer Alarm, LED, Breadboard')" class="text-xs text-cyan-400 font-bold hover:underline flex items-center gap-1">Detail <i class="fa-solid fa-arrow-right"></i></button>
                 </div>
             </div>
 
-            <!-- Project Card 3: JS Web App -->
-            <div class="project-item neo-box bg-brand-card overflow-hidden" data-category="web">
-                <div class="h-48 bg-slate-800 flex items-center justify-center border-b border-brand-border relative">
-                    <i class="fa-solid fa-code text-5xl text-yellow-400/50"></i>
-                    <span class="absolute top-3 right-3 px-2 py-1 bg-brand-dark/80 text-[10px] text-yellow-300 border border-yellow-500/30">HTML+CSS+JS</span>
-                </div>
-                <div class="p-6">
-                    <h4 class="font-display font-bold text-lg text-white mb-2">Web portofolio</h4>
-                    <p class="text-slate-400 text-xs mb-4">Antarmuka web Portofolio data diri .</p>
-                    <div class="flex items-center justify-between">
-                        <span class="text-[11px] text-slate-500">Web app</span>
-                        <button onclick="openModal('Web portofolio', 'Web portofolio pribadi dengan desain modern dan responsif.', 'HTML5, CSS, JavaScript')" class="text-xs text-cyan-400 font-bold hover:underline">Detail <i class="fa-solid fa-arrow-right"></i></button>
+            <!-- Project Card 3: JS Web App (Web Portofolio) -->
+            <div class="project-item neo-box bg-brand-card overflow-hidden flex flex-col justify-between" data-category="web">
+                <div>
+                    <div class="h-48 bg-slate-800 flex items-center justify-center border-b border-brand-border relative">
+                        <i class="fa-solid fa-code text-5xl text-yellow-400/50"></i>
+                        <span class="absolute top-3 right-3 px-2 py-1 bg-brand-dark/80 text-[10px] text-yellow-300 border border-yellow-500/30">HTML + CSS + JS</span>
                     </div>
+                    <div class="p-6">
+                        <h4 class="font-display font-bold text-lg text-white mb-2">Web Portofolio</h4>
+                        <p class="text-slate-400 text-xs mb-4 leading-relaxed">Proyek tugas sekolah website portofolio interaktif yang menyajikan data diri, keahlian, riwayat pendidikan, dan portofolio karya.</p>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 pt-2 flex items-center justify-between border-t border-brand-border/40">
+                    <span class="text-[11px] text-slate-500">Tugas Sekolah (Web)</span>
+                    <button onclick="openModal('Web Portofolio', 'Website portofolio pribadi modern dan responsif yang dibangun menggunakan HTML5, Tailwind CSS, dan JavaScript DOM native dengan fitur animasi canvas particle, custom cursor, filter karya, dan modal preview.', 'HTML5, Tailwind CSS, JavaScript Native')" class="text-xs text-cyan-400 font-bold hover:underline flex items-center gap-1">Detail <i class="fa-solid fa-arrow-right"></i></button>
                 </div>
             </div>
         </div>
@@ -341,7 +408,7 @@
 
         <div class="grid sm:grid-cols-2 gap-6">
             <!-- Email -->
-            <a href="mailto:acengwildanlaksana@gmail.com" class="neo-box p-6 bg-brand-card flex items-center gap-4 group">
+            <a href="mailto:25acengwildanlaksana@gmail.com" class="neo-box p-6 bg-brand-card flex items-center gap-4 group">
                 <div class="w-12 h-12 bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 group-hover:scale-110 transition-transform">
                     <i class="fa-solid fa-envelope text-xl"></i>
                 </div>
@@ -352,7 +419,7 @@
             </a>
 
             <!-- WhatsApp / Phone -->
-            <a href="https://wa.me/6281234567890" target="_blank" class="neo-box p-6 bg-brand-card flex items-center gap-4 group">
+            <a href="https://wa.me/6282127475399" target="_blank" class="neo-box p-6 bg-brand-card flex items-center gap-4 group">
                 <div class="w-12 h-12 bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 group-hover:scale-110 transition-transform">
                     <i class="fa-brands fa-whatsapp text-xl"></i>
                 </div>
@@ -422,23 +489,38 @@
 
         window.addEventListener('mousemove', (e) => {
             const { clientX: x, clientY: y } = e;
-            dot.style.left = `${x}px`;
-            dot.style.top = `${y}px`;
-            bg.style.left = `${x}px`;
-            bg.style.top = `${y}px`;
+            if (dot && bg) {
+                dot.style.opacity = '1';
+                bg.style.opacity = '1';
+                dot.style.left = `${x}px`;
+                dot.style.top = `${y}px`;
+                bg.style.left = `${x}px`;
+                bg.style.top = `${y}px`;
+            }
+        });
+
+        document.addEventListener('mouseleave', () => {
+            if (dot && bg) {
+                dot.style.opacity = '0';
+                bg.style.opacity = '0';
+            }
         });
 
         // Hover Effect on Cursor for Interactive Elements
         document.querySelectorAll('a, button, .neo-box').forEach(el => {
             el.addEventListener('mouseenter', () => {
-                bg.style.width = '55px';
-                bg.style.height = '55px';
-                bg.style.borderColor = '#00f2fe';
+                if (bg) {
+                    bg.style.width = '55px';
+                    bg.style.height = '55px';
+                    bg.style.borderColor = '#00f2fe';
+                }
             });
             el.addEventListener('mouseleave', () => {
-                bg.style.width = '36px';
-                bg.style.height = '36px';
-                bg.style.borderColor = 'rgba(0, 242, 254, 0.5)';
+                if (bg) {
+                    bg.style.width = '36px';
+                    bg.style.height = '36px';
+                    bg.style.borderColor = 'rgba(0, 242, 254, 0.5)';
+                }
             });
         });
 
@@ -448,8 +530,9 @@
         let particles = [];
 
         function resizeCanvas() {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
+            const parent = canvas.parentElement;
+            canvas.width = parent ? parent.clientWidth : window.innerWidth;
+            canvas.height = parent ? parent.clientHeight : window.innerHeight;
         }
         window.addEventListener('resize', resizeCanvas);
         resizeCanvas();
@@ -522,9 +605,9 @@
                 const filter = btn.dataset.filter;
                 projectItems.forEach(item => {
                     if (filter === 'all' || item.dataset.category === filter) {
-                        item.style.display = 'block';
+                        item.classList.remove('hidden');
                     } else {
-                        item.style.display = 'none';
+                        item.classList.add('hidden');
                     }
                 });
             });
@@ -537,16 +620,38 @@
             document.getElementById('modal-desc').innerText = desc;
             document.getElementById('modal-tech').innerText = tech;
             modal.classList.remove('hidden');
-        }
-        function closeModal() {
-            modal.classList.add('hidden');
+            document.body.style.overflow = 'hidden';
         }
 
-        // Mobile Menu Toggle
+        function closeModal() {
+            modal.classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+
+        // Close modal when clicking outside of the card (backdrop click)
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+
+        // Close modal on Escape key press
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+                closeModal();
+            }
+        });
+
+        // Mobile Menu Toggle & Auto-close on link click
         const menuBtn = document.getElementById('menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         menuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
+        });
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
         });
     </script>
 </body>
