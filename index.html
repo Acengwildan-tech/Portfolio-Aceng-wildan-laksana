@@ -44,24 +44,6 @@
             background-size: 28px 28px;
         }
 
-        /* Custom Cursor */
-        .cursor-dot, .cursor-bg {
-            pointer-events: none;
-            position: fixed;
-            top: 0; left: 0;
-            transform: translate(-50%, -50%);
-            border-radius: 50%;
-            z-index: 9999;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-        .cursor-dot { width: 8px; height: 8px; background-color: #00f2fe; }
-        .cursor-bg {
-            width: 36px; height: 36px;
-            border: 1px solid rgba(0, 242, 254, 0.4);
-            transition: left 0.08s ease-out, top 0.08s ease-out, width 0.2s, height 0.2s, border-color 0.2s, opacity 0.3s ease;
-        }
-
         /* Neo Brutalism Solid Box Effects */
         .neo-box {
             background: #111622;
@@ -91,16 +73,18 @@
 </head>
 <body class="selection:bg-cyan-500 selection:text-black">
 
-    <!-- Custom Mouse Follower -->
-    <div class="cursor-dot hidden md:block" id="cursor-dot"></div>
-    <div class="cursor-bg hidden md:block" id="cursor-bg"></div>
-
     <!-- Navigation (Urutan Menu Sesuai CV ATS) -->
     <nav class="fixed top-0 left-0 w-full z-50 glass-nav py-4">
         <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
-            <a href="#" class="font-display text-xl font-bold tracking-wider flex items-center gap-2">
-                <span class="w-3 h-3 bg-cyan-400 rounded-full animate-ping"></span>
-                <span class="text-white">Axora</span><span class="text-cyan-400">.dev</span>
+            <!-- Brand Logo (Personal Authentic Developer Branding) -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-9 h-9 rounded bg-brand-card border border-brand-border flex items-center justify-center font-display font-black text-cyan-400 text-sm tracking-wider shadow-[2px_2px_0px_0px_#1e293b] group-hover:border-cyan-400 group-hover:shadow-[3px_3px_0px_0px_#00f2fe] transition-all">
+                    AWL
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-display font-bold text-base text-white tracking-tight leading-none group-hover:text-cyan-400 transition-colors">Aceng Wildan</span>
+                    <span class="text-[10px] font-mono text-slate-400 mt-1">Junior Web Dev &bull; SMKN 1 Kawali</span>
+                </div>
             </a>
             
             <div class="hidden md:flex items-center gap-7 text-sm font-semibold tracking-wide">
@@ -135,8 +119,10 @@
     <!-- Hero Section (Clean Developer Theme) -->
     <section class="relative min-h-screen flex items-center justify-center pt-24 pb-16 px-6 overflow-hidden bg-grid-pattern">
         <div class="max-w-4xl mx-auto text-center relative z-10">
-            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-cyan-500/30 bg-slate-900/80 text-cyan-300 text-xs font-semibold mb-6">
-                <i class="fa-solid fa-code"></i> Junior Web Developer
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded bg-slate-900 border border-brand-border text-xs font-mono mb-6 shadow-[2px_2px_0px_0px_#1e293b]">
+                <span class="text-cyan-400 font-bold">&gt;_</span>
+                <span class="text-slate-200">developer@smkn1kawali</span>
+                <span class="text-slate-500">:~$</span>
             </div>
             
             <h1 class="font-display text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight mb-4 leading-tight text-white">
@@ -247,9 +233,37 @@
             <!-- Project Card 1: Membuat Website Company Profile (September 2026) -->
             <div class="project-item neo-box bg-brand-card overflow-hidden flex flex-col justify-between" data-category="web">
                 <div>
-                    <div class="h-48 bg-slate-800 flex items-center justify-center border-b border-brand-border relative">
-                        <i class="fa-solid fa-laptop-code text-5xl text-cyan-400/50"></i>
-                        <span class="absolute top-3 right-3 px-2.5 py-1 bg-cyan-500/20 text-[10px] text-cyan-300 border border-cyan-500/40 font-mono font-bold">September 2026</span>
+                    <!-- Interactive UI Preview: Mini Browser Window (Real Developer Mockup) -->
+                    <div class="h-48 bg-slate-900 border-b border-brand-border p-3.5 flex flex-col justify-between font-mono text-xs select-none relative">
+                        <div class="flex items-center justify-between pb-2 border-b border-brand-border/60">
+                            <div class="flex items-center gap-1.5">
+                                <span class="w-2.5 h-2.5 rounded-full bg-rose-500"></span>
+                                <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+                                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+                            </div>
+                            <div class="px-2.5 py-0.5 rounded bg-slate-800 text-[10px] text-slate-300 border border-brand-border flex items-center gap-1.5">
+                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> company-profile.test
+                            </div>
+                            <span class="text-[9px] px-2 py-0.5 rounded bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 font-bold">Sept 2026</span>
+                        </div>
+                        <div class="flex-1 my-2 bg-slate-950/80 rounded p-2.5 border border-brand-border/60 flex flex-col justify-between">
+                            <div class="flex items-center justify-between text-[11px] border-b border-slate-800 pb-1">
+                                <span class="font-bold text-white font-sans">COMPANY PROFILE</span>
+                                <span class="text-slate-500 text-[9px]">Beranda &bull; Tentang &bull; Layanan</span>
+                            </div>
+                            <div class="space-y-1.5 py-1">
+                                <div class="h-2 w-3/4 bg-slate-700/80 rounded-sm"></div>
+                                <div class="h-1.5 w-1/2 bg-slate-800 rounded-sm"></div>
+                            </div>
+                            <div class="flex items-center gap-2 pt-1">
+                                <span class="px-2 py-0.5 text-[9px] bg-cyan-400 text-black font-bold font-sans rounded-sm">Lihat Layanan</span>
+                                <span class="px-2 py-0.5 text-[9px] bg-slate-800 text-slate-300 rounded-sm border border-brand-border font-sans">Hubungi Kami</span>
+                            </div>
+                        </div>
+                        <div class="text-[10px] text-slate-400 flex justify-between items-center px-1">
+                            <span>Stack: PHP 8 &bull; Laravel MVC</span>
+                            <span class="text-emerald-400 font-bold">READY TO DEPLOY</span>
+                        </div>
                     </div>
                     <div class="p-6">
                         <div class="flex items-center justify-between mb-2">
@@ -288,9 +302,33 @@
             <!-- Project Card 2: IoT Arduino (Sistem Sensor Pendeteksi Api) -->
             <div class="project-item neo-box bg-brand-card overflow-hidden flex flex-col justify-between" data-category="iot">
                 <div>
-                    <div class="h-48 bg-slate-800 flex items-center justify-center border-b border-brand-border relative">
-                        <i class="fa-solid fa-fire-flame-curved text-5xl text-orange-400/60"></i>
-                        <span class="absolute top-3 right-3 px-2.5 py-1 bg-orange-500/20 text-[10px] text-orange-300 border border-orange-500/40 font-mono font-bold">ARDUINO + IOT</span>
+                    <!-- Hardware Telemetry Monitor Preview (Authentic IoT System) -->
+                    <div class="h-48 bg-slate-900 border-b border-brand-border p-3.5 flex flex-col justify-between font-mono text-xs select-none relative">
+                        <div class="flex items-center justify-between pb-2 border-b border-brand-border/60">
+                            <div class="flex items-center gap-2">
+                                <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+                                <span class="text-[10px] font-bold text-slate-200">ARDUINO UNO R3</span>
+                            </div>
+                            <span class="text-[9px] px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-500/40 font-bold">HARDWARE IOT</span>
+                        </div>
+                        <div class="flex-1 my-2 bg-slate-950/80 rounded p-2.5 border border-brand-border/60 flex flex-col justify-between text-[10px]">
+                            <div class="flex justify-between items-center border-b border-slate-900 pb-1">
+                                <span class="text-slate-400">FLAME SENSOR (IR):</span>
+                                <span class="text-emerald-400 font-bold">NORMAL (MONITORING)</span>
+                            </div>
+                            <div class="flex justify-between items-center border-b border-slate-900 py-0.5">
+                                <span class="text-slate-400">BUZZER ALARM (D8):</span>
+                                <span class="text-slate-300 font-bold">ARMED (STANDBY)</span>
+                            </div>
+                            <div class="flex justify-between items-center pt-0.5">
+                                <span class="text-slate-400">RESPONSE LATENCY:</span>
+                                <span class="text-cyan-400 font-bold">&lt; 150 ms (REALTIME)</span>
+                            </div>
+                        </div>
+                        <div class="text-[10px] text-slate-400 flex justify-between items-center px-1">
+                            <span>PINOUT: A0 Analog + D2 Digital</span>
+                            <span class="text-amber-400 font-bold">AUTO SAFETY</span>
+                        </div>
                     </div>
                     <div class="p-6">
                         <div class="flex items-center justify-between mb-2">
@@ -316,9 +354,34 @@
             <!-- Project Card 3: IoT & Robotika (Pembuatan Robot Mochi) -->
             <div class="project-item neo-box bg-brand-card overflow-hidden flex flex-col justify-between" data-category="iot">
                 <div>
-                    <div class="h-48 bg-slate-800 flex items-center justify-center border-b border-brand-border relative">
-                        <i class="fa-solid fa-robot text-5xl text-cyan-400/60"></i>
-                        <span class="absolute top-3 right-3 px-2.5 py-1 bg-cyan-500/20 text-[10px] text-cyan-300 border border-cyan-500/40 font-mono font-bold">ARDUINO + ROBOTIKA</span>
+                    <!-- Mekatronika & Robotic Telemetry Preview (No Generic AI Icon) -->
+                    <div class="h-48 bg-slate-900 border-b border-brand-border p-3.5 flex flex-col justify-between font-mono text-xs select-none relative">
+                        <div class="flex items-center justify-between pb-2 border-b border-brand-border/60">
+                            <div class="flex items-center gap-2">
+                                <span class="w-2 h-2 rounded-full bg-cyan-400"></span>
+                                <span class="text-[10px] font-bold text-slate-200">ROBOT MOCHI &bull; NAV-1</span>
+                            </div>
+                            <span class="text-[9px] px-2 py-0.5 rounded bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 font-bold">MEKATRONIKA</span>
+                        </div>
+                        <div class="flex-1 my-2 bg-slate-950/80 rounded p-2.5 border border-brand-border/60 flex flex-col justify-between text-[10px]">
+                            <div class="flex justify-between items-center border-b border-slate-900 pb-1">
+                                <span class="text-slate-400">HC-SR04 SENSOR:</span>
+                                <span class="text-cyan-400 font-bold">TRIG / ECHO SCAN</span>
+                            </div>
+                            <div class="flex justify-between items-center border-b border-slate-900 py-0.5">
+                                <span class="text-slate-400">L298N DRIVER:</span>
+                                <span class="text-emerald-400 font-bold">DUAL DC 6V MOTOR</span>
+                            </div>
+                            <div class="flex items-center justify-between pt-0.5 text-[9px] text-slate-500">
+                                <span>[Kiri: Jernih]</span>
+                                <span class="text-cyan-400 font-bold">[Depan: 45cm]</span>
+                                <span>[Kanan: Jernih]</span>
+                            </div>
+                        </div>
+                        <div class="text-[10px] text-slate-400 flex justify-between items-center px-1">
+                            <span>LOGIKA: OBSTACLE AVOIDANCE</span>
+                            <span class="text-cyan-400 font-bold">AUTONOMOUS</span>
+                        </div>
                     </div>
                     <div class="p-6">
                         <div class="flex items-center justify-between mb-2">
@@ -614,7 +677,7 @@
                     <div class="neo-box p-4 sm:p-5 bg-brand-card relative overflow-hidden group hover:border-cyan-400 transition-all">
                         <div class="flex items-start gap-4">
                             <div class="w-11 h-11 rounded-lg bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-lg flex-shrink-0 group-hover:scale-110 transition-transform mt-0.5">
-                                <i class="fa-solid fa-lightbulb"></i>
+                                <i class="fa-solid fa-screwdriver-wrench"></i>
                             </div>
                             <div>
                                 <div class="flex items-center justify-between mb-1">
@@ -632,7 +695,7 @@
                     <div class="neo-box p-4 sm:p-5 bg-brand-card relative overflow-hidden group hover:border-indigo-400 transition-all">
                         <div class="flex items-start gap-4">
                             <div class="w-11 h-11 rounded-lg bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-lg flex-shrink-0 group-hover:scale-110 transition-transform mt-0.5">
-                                <i class="fa-solid fa-crosshairs"></i>
+                                <i class="fa-solid fa-clipboard-check"></i>
                             </div>
                             <div>
                                 <div class="flex items-center justify-between mb-1">
@@ -650,7 +713,7 @@
                     <div class="neo-box p-4 sm:p-5 bg-brand-card relative overflow-hidden group hover:border-emerald-400 transition-all">
                         <div class="flex items-start gap-4">
                             <div class="w-11 h-11 rounded-lg bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-lg flex-shrink-0 group-hover:scale-110 transition-transform mt-0.5">
-                                <i class="fa-solid fa-users"></i>
+                                <i class="fa-solid fa-user-group"></i>
                             </div>
                             <div>
                                 <div class="flex items-center justify-between mb-1">
@@ -668,7 +731,7 @@
                     <div class="neo-box p-4 sm:p-5 bg-brand-card relative overflow-hidden group hover:border-amber-400 transition-all">
                         <div class="flex items-start gap-4">
                             <div class="w-11 h-11 rounded-lg bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 text-lg flex-shrink-0 group-hover:scale-110 transition-transform mt-0.5">
-                                <i class="fa-solid fa-clock"></i>
+                                <i class="fa-solid fa-calendar-check"></i>
                             </div>
                             <div>
                                 <div class="flex items-center justify-between mb-1">
@@ -771,47 +834,6 @@
 
     <!-- JavaScript Interactivity -->
     <script>
-        // Custom Mouse Follower Logic
-        const dot = document.getElementById('cursor-dot');
-        const bg = document.getElementById('cursor-bg');
-
-        window.addEventListener('mousemove', (e) => {
-            const { clientX: x, clientY: y } = e;
-            if (dot && bg) {
-                dot.style.opacity = '1';
-                bg.style.opacity = '1';
-                dot.style.left = `${x}px`;
-                dot.style.top = `${y}px`;
-                bg.style.left = `${x}px`;
-                bg.style.top = `${y}px`;
-            }
-        });
-
-        document.addEventListener('mouseleave', () => {
-            if (dot && bg) {
-                dot.style.opacity = '0';
-                bg.style.opacity = '0';
-            }
-        });
-
-        // Hover Effect on Cursor for Interactive Elements
-        document.querySelectorAll('a, button, .neo-box').forEach(el => {
-            el.addEventListener('mouseenter', () => {
-                if (bg) {
-                    bg.style.width = '55px';
-                    bg.style.height = '55px';
-                    bg.style.borderColor = '#00f2fe';
-                }
-            });
-            el.addEventListener('mouseleave', () => {
-                if (bg) {
-                    bg.style.width = '36px';
-                    bg.style.height = '36px';
-                    bg.style.borderColor = 'rgba(0, 242, 254, 0.5)';
-                }
-            });
-        });
-
         // Project Filter Logic
         const filterBtns = document.querySelectorAll('.filter-btn');
         const projectItems = document.querySelectorAll('.project-item');
