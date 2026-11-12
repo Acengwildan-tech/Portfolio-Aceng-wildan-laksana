@@ -76,15 +76,12 @@
     <!-- Navigation (Urutan Menu Sesuai CV ATS) -->
     <nav class="fixed top-0 left-0 w-full z-50 glass-nav py-4">
         <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
-            <!-- Brand Logo (Personal Authentic Developer Branding) -->
-            <a href="#" class="flex items-center gap-3 group">
-                <div class="w-9 h-9 rounded bg-brand-card border border-brand-border flex items-center justify-center font-display font-black text-cyan-400 text-sm tracking-wider shadow-[2px_2px_0px_0px_#1e293b] group-hover:border-cyan-400 group-hover:shadow-[3px_3px_0px_0px_#00f2fe] transition-all">
-                    AWL
+            <!-- Brand Logo (Axora Digital) -->
+            <a href="#" class="flex items-center gap-2.5 group">
+                <div class="w-8 h-8 rounded bg-brand-card border border-brand-border flex items-center justify-center font-display font-black text-cyan-400 text-xs shadow-[2px_2px_0px_0px_#1e293b] group-hover:border-cyan-400 transition-all">
+                    AD
                 </div>
-                <div class="flex flex-col">
-                    <span class="font-display font-bold text-base text-white tracking-tight leading-none group-hover:text-cyan-400 transition-colors">Aceng Wildan</span>
-                    <span class="text-[10px] font-mono text-slate-400 mt-1">Junior Web Dev &bull; SMKN 1 Kawali</span>
-                </div>
+                <span class="font-display font-bold text-lg tracking-wide text-white"><span class="text-white">Axora</span> <span class="text-cyan-400">Digital</span></span>
             </a>
             
             <div class="hidden md:flex items-center gap-7 text-sm font-semibold tracking-wide">
@@ -228,72 +225,38 @@
             </div>
         </div>
 
-        <!-- Project Cards Container -->
+        <!-- Project Cards Container (Clean Content Cards - No Image) -->
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="projects-grid">
             <!-- Project Card 1: Membuat Website Company Profile (September 2026) -->
             <div class="project-item neo-box bg-brand-card overflow-hidden flex flex-col justify-between" data-category="web">
-                <div>
-                    <!-- Interactive UI Preview: Mini Browser Window (Real Developer Mockup) -->
-                    <div class="h-48 bg-slate-900 border-b border-brand-border p-3.5 flex flex-col justify-between font-mono text-xs select-none relative">
-                        <div class="flex items-center justify-between pb-2 border-b border-brand-border/60">
-                            <div class="flex items-center gap-1.5">
-                                <span class="w-2.5 h-2.5 rounded-full bg-rose-500"></span>
-                                <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
-                                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
-                            </div>
-                            <div class="px-2.5 py-0.5 rounded bg-slate-800 text-[10px] text-slate-300 border border-brand-border flex items-center gap-1.5">
-                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> company-profile.test
-                            </div>
-                            <span class="text-[9px] px-2 py-0.5 rounded bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 font-bold">Sept 2026</span>
-                        </div>
-                        <div class="flex-1 my-2 bg-slate-950/80 rounded p-2.5 border border-brand-border/60 flex flex-col justify-between">
-                            <div class="flex items-center justify-between text-[11px] border-b border-slate-800 pb-1">
-                                <span class="font-bold text-white font-sans">COMPANY PROFILE</span>
-                                <span class="text-slate-500 text-[9px]">Beranda &bull; Tentang &bull; Layanan</span>
-                            </div>
-                            <div class="space-y-1.5 py-1">
-                                <div class="h-2 w-3/4 bg-slate-700/80 rounded-sm"></div>
-                                <div class="h-1.5 w-1/2 bg-slate-800 rounded-sm"></div>
-                            </div>
-                            <div class="flex items-center gap-2 pt-1">
-                                <span class="px-2 py-0.5 text-[9px] bg-cyan-400 text-black font-bold font-sans rounded-sm">Lihat Layanan</span>
-                                <span class="px-2 py-0.5 text-[9px] bg-slate-800 text-slate-300 rounded-sm border border-brand-border font-sans">Hubungi Kami</span>
-                            </div>
-                        </div>
-                        <div class="text-[10px] text-slate-400 flex justify-between items-center px-1">
-                            <span>Stack: PHP 8 &bull; Laravel MVC</span>
-                            <span class="text-emerald-400 font-bold">READY TO DEPLOY</span>
-                        </div>
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-[10px] font-mono text-cyan-400 uppercase tracking-wider font-semibold">Web Development</span>
+                        <span class="text-[10px] bg-slate-800 text-slate-300 px-2 py-0.5 rounded border border-brand-border">PHP & Laravel</span>
                     </div>
-                    <div class="p-6">
-                        <div class="flex items-center justify-between mb-2">
-                            <span class="text-[10px] font-mono text-cyan-400 uppercase tracking-wider font-semibold">Web Development</span>
-                            <span class="text-[10px] bg-slate-800 text-slate-300 px-2 py-0.5 rounded border border-brand-border">PHP & Laravel</span>
-                        </div>
-                        <h4 class="font-display font-bold text-lg text-white mb-3">Membuat Website Company Profile</h4>
-                        
-                        <!-- Exact ATS Bullet Points -->
-                        <ul class="text-slate-400 text-xs space-y-2 mb-4 leading-relaxed">
-                            <li class="flex items-start gap-2">
-                                <i class="fa-solid fa-check text-cyan-400 text-[11px] mt-0.5 flex-shrink-0"></i>
-                                <span>Mempersiapkan perancangan dan kebutuhan struktur website company profile.</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <i class="fa-solid fa-check text-cyan-400 text-[11px] mt-0.5 flex-shrink-0"></i>
-                                <span>Membuat rancangan desain visual (UI/UX design) dan tata letak halaman website.</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <i class="fa-solid fa-check text-cyan-400 text-[11px] mt-0.5 flex-shrink-0"></i>
-                                <span>Mengembangkan serta mempublikasikan website company profile secara penuh.</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <i class="fa-solid fa-check text-cyan-400 text-[11px] mt-0.5 flex-shrink-0"></i>
-                                <span>Memastikan seluruh fitur, respon halaman, dan fungsi website berjalan dengan baik.</span>
-                            </li>
-                        </ul>
-                    </div>
+                    <h4 class="font-display font-bold text-lg text-white mb-3">Membuat Website Company Profile</h4>
+                    
+                    <!-- Exact ATS Bullet Points -->
+                    <ul class="text-slate-400 text-xs space-y-2 mb-4 leading-relaxed">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-cyan-400 text-[11px] mt-0.5 flex-shrink-0"></i>
+                            <span>Mempersiapkan perancangan dan kebutuhan struktur website company profile.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-cyan-400 text-[11px] mt-0.5 flex-shrink-0"></i>
+                            <span>Membuat rancangan desain visual (UI/UX design) dan tata letak halaman website.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-cyan-400 text-[11px] mt-0.5 flex-shrink-0"></i>
+                            <span>Mengembangkan serta mempublikasikan website company profile secara penuh.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-cyan-400 text-[11px] mt-0.5 flex-shrink-0"></i>
+                            <span>Memastikan seluruh fitur, respon halaman, dan fungsi website berjalan dengan baik.</span>
+                        </li>
+                    </ul>
                 </div>
-                <div class="px-6 pb-6 pt-2 flex items-center justify-between border-t border-brand-border/40">
+                <div class="px-6 pb-6 pt-3 flex items-center justify-between border-t border-brand-border/40">
                     <span class="text-[11px] text-slate-500 font-mono">September 2026</span>
                     <button onclick="openModal('Membuat Website Company Profile (September 2026)', 'Proyek pengembangan website company profile lengkap berbasis PHP dan framework Laravel dengan database MySQL. Meliputi analisis kebutuhan struktur, perancangan antarmuka visual UI/UX yang responsif, penulisan clean code, integrasi database, hingga pengujian fungsionalitas dan publikasi online.', 'PHP, Laravel, MySQL, UI/UX Design, Tailwind CSS')" class="text-xs text-cyan-400 font-bold hover:underline flex items-center gap-1">Detail <i class="fa-solid fa-arrow-right"></i></button>
                 </div>
@@ -301,51 +264,21 @@
 
             <!-- Project Card 2: IoT Arduino (Sistem Sensor Pendeteksi Api) -->
             <div class="project-item neo-box bg-brand-card overflow-hidden flex flex-col justify-between" data-category="iot">
-                <div>
-                    <!-- Hardware Telemetry Monitor Preview (Authentic IoT System) -->
-                    <div class="h-48 bg-slate-900 border-b border-brand-border p-3.5 flex flex-col justify-between font-mono text-xs select-none relative">
-                        <div class="flex items-center justify-between pb-2 border-b border-brand-border/60">
-                            <div class="flex items-center gap-2">
-                                <span class="w-2 h-2 rounded-full bg-amber-400"></span>
-                                <span class="text-[10px] font-bold text-slate-200">ARDUINO UNO R3</span>
-                            </div>
-                            <span class="text-[9px] px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-500/40 font-bold">HARDWARE IOT</span>
-                        </div>
-                        <div class="flex-1 my-2 bg-slate-950/80 rounded p-2.5 border border-brand-border/60 flex flex-col justify-between text-[10px]">
-                            <div class="flex justify-between items-center border-b border-slate-900 pb-1">
-                                <span class="text-slate-400">FLAME SENSOR (IR):</span>
-                                <span class="text-emerald-400 font-bold">NORMAL (MONITORING)</span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-slate-900 py-0.5">
-                                <span class="text-slate-400">BUZZER ALARM (D8):</span>
-                                <span class="text-slate-300 font-bold">ARMED (STANDBY)</span>
-                            </div>
-                            <div class="flex justify-between items-center pt-0.5">
-                                <span class="text-slate-400">RESPONSE LATENCY:</span>
-                                <span class="text-cyan-400 font-bold">&lt; 150 ms (REALTIME)</span>
-                            </div>
-                        </div>
-                        <div class="text-[10px] text-slate-400 flex justify-between items-center px-1">
-                            <span>PINOUT: A0 Analog + D2 Digital</span>
-                            <span class="text-amber-400 font-bold">AUTO SAFETY</span>
-                        </div>
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-[10px] font-mono text-orange-400 uppercase tracking-wider font-semibold">Hardware & IoT</span>
+                        <span class="text-[10px] bg-slate-800 text-slate-300 px-2 py-0.5 rounded border border-brand-border">Arduino Uno</span>
                     </div>
-                    <div class="p-6">
-                        <div class="flex items-center justify-between mb-2">
-                            <span class="text-[10px] font-mono text-orange-400 uppercase tracking-wider font-semibold">Hardware & IoT</span>
-                            <span class="text-[10px] bg-slate-800 text-slate-300 px-2 py-0.5 rounded border border-brand-border">Intermediate</span>
-                        </div>
-                        <h4 class="font-display font-bold text-lg text-white mb-2">Sistem Sensor Pendeteksi Api</h4>
-                        <p class="text-slate-400 text-xs mb-4 leading-relaxed">Proyek IoT Arduino menggunakan Flame Sensor (sensor pendeteksi api) yang otomatis mengaktifkan buzzer alarm peringatan dini dan indikator bahaya saat mendeteksi titik api.</p>
-                        
-                        <div class="space-y-1.5 text-slate-400 text-xs mb-4">
-                            <div class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-orange-400 text-[10px]"></i> Deteksi radiasi inframerah nyala api secara real-time</div>
-                            <div class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-orange-400 text-[10px]"></i> Respon alarm seketika via buzzer piezo dan LED</div>
-                            <div class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-orange-400 text-[10px]"></i> Prototipe sistem pencegahan dini kebakaran gedung</div>
-                        </div>
+                    <h4 class="font-display font-bold text-lg text-white mb-2">Sistem Sensor Pendeteksi Api</h4>
+                    <p class="text-slate-400 text-xs mb-4 leading-relaxed">Proyek IoT Arduino menggunakan Flame Sensor (sensor pendeteksi api) yang otomatis mengaktifkan buzzer alarm peringatan dini dan indikator bahaya saat mendeteksi titik api.</p>
+                    
+                    <div class="space-y-1.5 text-slate-400 text-xs mb-4">
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-orange-400 text-[10px]"></i> Deteksi radiasi inframerah nyala api secara real-time</div>
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-orange-400 text-[10px]"></i> Respon alarm seketika via buzzer piezo dan LED</div>
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-orange-400 text-[10px]"></i> Prototipe sistem pencegahan dini kebakaran gedung</div>
                     </div>
                 </div>
-                <div class="px-6 pb-6 pt-2 flex items-center justify-between border-t border-brand-border/40">
+                <div class="px-6 pb-6 pt-3 flex items-center justify-between border-t border-brand-border/40">
                     <span class="text-[11px] text-slate-500 font-mono">IoT System</span>
                     <button onclick="openModal('Sistem Sensor Pendeteksi Api', 'Prototipe sistem keselamatan kebakaran berbasis Arduino dengan Flame Sensor untuk mendeteksi nyala api secara real-time. Ketika api terdeteksi, sistem langsung membunyikan buzzer alarm dan menyalakan lampu indikator sebagai peringatan bahaya.', 'Arduino C++, Flame Sensor, Buzzer Alarm, LED, Breadboard')" class="text-xs text-cyan-400 font-bold hover:underline flex items-center gap-1">Detail <i class="fa-solid fa-arrow-right"></i></button>
                 </div>
@@ -353,52 +286,21 @@
 
             <!-- Project Card 3: IoT & Robotika (Pembuatan Robot Mochi) -->
             <div class="project-item neo-box bg-brand-card overflow-hidden flex flex-col justify-between" data-category="iot">
-                <div>
-                    <!-- Mekatronika & Robotic Telemetry Preview (No Generic AI Icon) -->
-                    <div class="h-48 bg-slate-900 border-b border-brand-border p-3.5 flex flex-col justify-between font-mono text-xs select-none relative">
-                        <div class="flex items-center justify-between pb-2 border-b border-brand-border/60">
-                            <div class="flex items-center gap-2">
-                                <span class="w-2 h-2 rounded-full bg-cyan-400"></span>
-                                <span class="text-[10px] font-bold text-slate-200">ROBOT MOCHI &bull; NAV-1</span>
-                            </div>
-                            <span class="text-[9px] px-2 py-0.5 rounded bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 font-bold">MEKATRONIKA</span>
-                        </div>
-                        <div class="flex-1 my-2 bg-slate-950/80 rounded p-2.5 border border-brand-border/60 flex flex-col justify-between text-[10px]">
-                            <div class="flex justify-between items-center border-b border-slate-900 pb-1">
-                                <span class="text-slate-400">HC-SR04 SENSOR:</span>
-                                <span class="text-cyan-400 font-bold">TRIG / ECHO SCAN</span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-slate-900 py-0.5">
-                                <span class="text-slate-400">L298N DRIVER:</span>
-                                <span class="text-emerald-400 font-bold">DUAL DC 6V MOTOR</span>
-                            </div>
-                            <div class="flex items-center justify-between pt-0.5 text-[9px] text-slate-500">
-                                <span>[Kiri: Jernih]</span>
-                                <span class="text-cyan-400 font-bold">[Depan: 45cm]</span>
-                                <span>[Kanan: Jernih]</span>
-                            </div>
-                        </div>
-                        <div class="text-[10px] text-slate-400 flex justify-between items-center px-1">
-                            <span>LOGIKA: OBSTACLE AVOIDANCE</span>
-                            <span class="text-cyan-400 font-bold">AUTONOMOUS</span>
-                        </div>
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-[10px] font-mono text-cyan-400 uppercase tracking-wider font-semibold">Hardware & Robotika</span>
+                        <span class="text-[10px] bg-slate-800 text-slate-300 px-2 py-0.5 rounded border border-brand-border">Arduino Uno</span>
                     </div>
-                    <div class="p-6">
-                        <div class="flex items-center justify-between mb-2">
-                            <span class="text-[10px] font-mono text-cyan-400 uppercase tracking-wider font-semibold">Hardware & Robotika</span>
-                            <span class="text-[10px] bg-slate-800 text-slate-300 px-2 py-0.5 rounded border border-brand-border">Arduino Uno</span>
-                        </div>
-                        <h4 class="font-display font-bold text-lg text-white mb-2">Pembuatan Robot Mochi</h4>
-                        <p class="text-slate-400 text-xs mb-4 leading-relaxed">Pengembangan robot cerdas berbasis mikrokontroler Arduino Uno dengan sistem navigasi otomatis menghindari rintangan (obstacle avoidance).</p>
-                        
-                        <div class="space-y-1.5 text-slate-400 text-xs mb-4">
-                            <div class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-cyan-400 text-[10px]"></i> Perakitan sasis mekanik robot, motor DC, dan modul driver L298N</div>
-                            <div class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-cyan-400 text-[10px]"></i> Integrasi sensor ultrasonik HC-SR04 pemindai jarak rintangan</div>
-                            <div class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-cyan-400 text-[10px]"></i> Algoritma kendali otomatis manuver arah gerak robot secara mandiri</div>
-                        </div>
+                    <h4 class="font-display font-bold text-lg text-white mb-2">Pembuatan Robot Mochi</h4>
+                    <p class="text-slate-400 text-xs mb-4 leading-relaxed">Pengembangan robot cerdas berbasis mikrokontroler Arduino Uno dengan sistem navigasi otomatis menghindari rintangan (obstacle avoidance).</p>
+                    
+                    <div class="space-y-1.5 text-slate-400 text-xs mb-4">
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-cyan-400 text-[10px]"></i> Perakitan sasis mekanik robot, motor DC, dan modul driver L298N</div>
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-cyan-400 text-[10px]"></i> Integrasi sensor ultrasonik HC-SR04 pemindai jarak rintangan</div>
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-cyan-400 text-[10px]"></i> Algoritma kendali otomatis manuver arah gerak robot secara mandiri</div>
                     </div>
                 </div>
-                <div class="px-6 pb-6 pt-2 flex items-center justify-between border-t border-brand-border/40">
+                <div class="px-6 pb-6 pt-3 flex items-center justify-between border-t border-brand-border/40">
                     <span class="text-[11px] text-slate-500 font-mono">IoT & Robotika</span>
                     <button onclick="openModal('Pembuatan Robot Mochi (IoT & Robotika)', 'Proyek robotika pintar berbasis mikrokontroler Arduino Uno bernama Robot Mochi. Robot ini dilengkapi sensor ultrasonik HC-SR04 untuk mengukur jarak halangan di depannya secara real-time serta driver motor L298N untuk mengendalikan sepasang motor roda DC. Ketika mendeteksi halangan dalam jarak tertentu, sistem secara mandiri bermanuver memutar arah untuk menghindari tabrakan.', 'Arduino Uno, Sensor Ultrasonik HC-SR04, Motor Driver L298N, DC Gear Motor, C++ Arduino')" class="text-xs text-cyan-400 font-bold hover:underline flex items-center gap-1">Detail <i class="fa-solid fa-arrow-right"></i></button>
                 </div>
